@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Discord = require("discord.js");
-const ConfigFile = require("./config");
+const ConfigFile = require("./dist/config");
 const client = new Discord.Client();
 let commands = [];
 loadCommands(`${__dirname}/commands`);
