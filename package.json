@@ -1,0 +1,16 @@
+{
+  "name": "violetevergarden",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BlueRose",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.6.8",
+    "discord.js": "^11.5.1"
+  }
+}
