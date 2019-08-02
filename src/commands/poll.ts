@@ -34,7 +34,7 @@ export default class poll implements IBotCommand {
 
         let resultsEmbed = new Discord.RichEmbed()
             .setTitle("Poll Results")
-            .setDescription(`Results for The Poll: ${args.join("")}`)
+            .setDescription(`Results for The Poll: ${args.join(" ")}`)
             .addField("✅:",`${results.get("✅").count-1} Votes`)
             .addField("❎:",`${results.get("❎").count-1} Votes`)
 
