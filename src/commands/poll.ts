@@ -31,6 +31,7 @@ export default class poll implements IBotCommand {
 
         const filter = (reaction: Discord.MessageReaction) => reaction.emoji.name === "✅" || reaction.emoji.name === "❎";
         const results = await (pollMessage as Discord.Message).awaitReactions(filter, { time: 5000})
+    
 
         let resultsEmbed = new Discord.RichEmbed()
             .setTitle("Poll Results")
@@ -38,7 +39,7 @@ export default class poll implements IBotCommand {
             .addField("✅:",`${results.get("✅").count-1} Votes`)
             .addField("❎:",`${results.get("❎").count-1} Votes`);
  
-        msgObject.channel.send(resultsEmbed);
+        await msgObject.channel.send(resultsEmbed);
         (pollMessage as Discord.Message).delete(0);
     }
 }
