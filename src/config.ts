@@ -5,6 +5,7 @@ export let config = {
         "kick",
         "purge",
         "serverinfo",
+        "poll",
 
     ]
 }    
